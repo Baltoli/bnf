@@ -1,3 +1,5 @@
+project(bnf VERSION 0.1 LANGUAGES CXX)
+
 add_executable(bnf
   src/main.cpp
 )

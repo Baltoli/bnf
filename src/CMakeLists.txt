@@ -15,3 +15,4 @@ include(GNUInstallDirs)
 enable_testing()
 
 add_subdirectory(bnf)
+add_subdirectory(corebnf)
