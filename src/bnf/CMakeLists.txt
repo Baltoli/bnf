@@ -5,6 +5,7 @@ add_executable(bnf
 )
 
 target_link_libraries(bnf
+  corebnf
   CONAN_PKG::fmt
   CONAN_PKG::spdlog
   CONAN_PKG::pegtl
