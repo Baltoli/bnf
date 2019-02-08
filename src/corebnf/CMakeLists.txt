@@ -1,7 +1,17 @@
 project(corebnf VERSION 0.1 LANGUAGES CXX)
 
+# Core Library
+
 add_library(corebnf
-  src/bnf.cpp
+  src/grammar.cpp
+)
+
+set_target_properties(corebnf PROPERTIES
+  CXX_STANDARD 17
+)
+
+target_link_libraries(corebnf
+  stdc++fs
 )
 
 target_include_directories(corebnf PUBLIC
@@ -16,6 +26,8 @@ install(TARGETS corebnf EXPORT BNFConfig
 install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 
 install(EXPORT BNFConfig DESTINATION share/BNF/cmake)
+
+# Test Suite
 
 add_executable(core_unit
   test/main.cpp

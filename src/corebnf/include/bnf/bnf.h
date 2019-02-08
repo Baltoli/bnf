@@ -1,4 +1,3 @@
 #pragma once
 
-namespace bnf {
-}
+#include <bnf/grammar.h>
