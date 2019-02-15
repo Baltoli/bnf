@@ -7,6 +7,17 @@
 namespace bnf {
 
 /**
+ * These classes will be used to generate parser code by walking the tree
+ * structure acquired during parsing.
+ */
+
+/**
+ * One production in a grammar.
+ */
+class production {
+};
+
+/**
  * Represents a BNF grammar to be converted into parser code.
  */
 class grammar {
