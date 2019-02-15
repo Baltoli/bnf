@@ -11,11 +11,11 @@ namespace bnf {
 grammar::grammar(fs::path path)
 {
   auto in = file_input<>(path.string());
-  auto succ = parse<grammar_file, my_actions>(in);
+  /* auto succ = parse<grammar_file, my_actions>(in); */
 
-  if(!succ) {
-    throw 2;
-  }
+  /* if(!succ) { */
+  /*   throw 2; */
+  /* } */
 }
 
 grammar::grammar(std::string_view sv)

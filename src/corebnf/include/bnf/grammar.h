@@ -14,8 +14,6 @@ namespace bnf {
 /**
  * One production in a grammar.
  */
-class production {
-};
 
 /**
  * Represents a BNF grammar to be converted into parser code.
