@@ -12,6 +12,8 @@ set_target_properties(corebnf PROPERTIES
 
 target_link_libraries(corebnf
   stdc++fs
+  CONAN_PKG::fmt
+  CONAN_PKG::pegtl
 )
 
 target_include_directories(corebnf PUBLIC
