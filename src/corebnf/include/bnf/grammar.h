@@ -7,19 +7,6 @@
 namespace bnf {
 
 /**
- * Represents a terminal symbol in a grammar.
- */
-class terminal {
-public:
-  terminal(std::string val);
-
-  std::string const& value() const noexcept;
-
-private:
-  std::string value_;
-};
-
-/**
  * Represents a BNF grammar to be converted into parser code.
  */
 class grammar {
